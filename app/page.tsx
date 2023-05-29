@@ -1,7 +1,15 @@
+import Posts from './components/Posts'
+
 export default function Home() {
 	return (
-		<main>
-			<h1 className='text-3xl  font-bold text-indigo-500'>Blog Next</h1>
+		<main className='px-6 mx-auto'>
+			<p className='mt-12 mb-12 text-3xl text-center dark:text-white'>
+				Hello and Welcome 👋&nbsp;
+				<span className='whitespace-nowrap'>
+					I&apos;m <span className='font-bold'>Makima</span>.
+				</span>
+			</p>
+			<Posts />
 		</main>
 	)
 }

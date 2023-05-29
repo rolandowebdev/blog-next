@@ -8,6 +8,6 @@
 	}
 
 	main {
-		@apply m-auto;
+		@apply mx-auto px-6;
 	}
 }
