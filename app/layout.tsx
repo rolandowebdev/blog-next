@@ -1,13 +1,12 @@
-import Navbar from './components/Navbar'
-import Profile from './components/Profile'
-import './globals.css'
 import { Inter } from 'next/font/google'
+import Navbar from './components/Navbar'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-	title: "Makima's Blog NextJS",
-	description: "Blog with Makima's",
+	title: 'Vzents Blog NextJS',
+	description: 'Blog with Vzents',
 }
 
 export default function RootLayout({
@@ -19,8 +18,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={inter.className}>
 				<Navbar />
-				<Profile />
-				{children}
+				<main className='px-6 mx-auto'>{children}</main>
 			</body>
 		</html>
 	)
